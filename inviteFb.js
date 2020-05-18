@@ -1,9 +1,9 @@
 const puppeteer = require('puppeteer');
 
-//Paramètres
-const facebookUser = 'viennet.thomas@hotmail.fr'; //adresse email
-const facebookPwd = 'bT1k;F-Wm';
-const facebookPage = 'Chatoune_france';
+//Paramètres compte Facebook Business
+const facebookUser = ''; //Adresse email
+const facebookPwd = '';//Mot de passe
+const facebookPage = '';//Slug de la page Facebook
 const nbPublications = 3;//À partir de la plus récente
 const vitesse = 5;//De 1 à 10, où 1 étant le plus rapide
 
