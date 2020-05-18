@@ -1,15 +1,15 @@
 const puppeteer = require('puppeteer');
 
-//Settings
-const facebookUser = '';
-const facebookPwd = '';
-const facebookPage = '';
+//Paramètres
+const facebookUser = 'viennet.thomas@hotmail.fr'; //adresse email
+const facebookPwd = 'bT1k;F-Wm';
+const facebookPage = 'Chatoune_france';
 const nbPublications = 3;//À partir de la plus récente
 const vitesse = 5;//De 1 à 10, où 1 étant le plus rapide
 
 //Processus invitations
 (async () => {
-  const browser = await puppeteer.launch({headless:true})
+  const browser = await puppeteer.launch({headless:false})
   const page = await browser.newPage()
   await page.goto("https://business.facebook.com/login/?next=https://business.facebook.com/"+ facebookPage +"/publishing_tools/?refSource=pages_manager_bar")
   page.waitForNavigation()
