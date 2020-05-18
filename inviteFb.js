@@ -1,4 +1,3 @@
-//npm install puppeteer
 const puppeteer = require('puppeteer');
 
 //Settings
